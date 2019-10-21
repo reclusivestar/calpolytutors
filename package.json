@@ -1,5 +1,5 @@
 {
-  "name": "chs",
+  "name": "calpolytutors",
   "version": "1.0.0",
   "description": "Test",
   "main": "main.js",
@@ -15,9 +15,5 @@
   "scripts": {
     "test": "node main.js",
     "start": "node main.js"
-  },
-  "author": [
-    "Johnathan Nicholson",
-    "Clinton Staley"
-  ]
+  }
 }

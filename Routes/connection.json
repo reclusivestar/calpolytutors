@@ -1,6 +1,5 @@
 {
-    "host": "localhost",
+    "host": "35.199.183.188",
     "user": "root",
-    "password": "password",
     "database": "student"
 }
