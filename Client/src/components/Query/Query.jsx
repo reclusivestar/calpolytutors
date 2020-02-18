@@ -16,12 +16,13 @@ export default class Query extends Component {
       }
    }
 
-   /*componentDidMount() {
-      this.interval = setInterval(() => this.props.updateQueries(), 10000);
+   componentDidMount() {
+	this.interval = setInterval(() => 
+		this.state.showModal?  null : this.props.updateQueries(), 5000);
    }
    componentWillUnmount() {
       clearInterval(this.interval);
-   }*/
+   }
 
    openModal = (query) => {
       const newState = { showModal: true };

@@ -11,7 +11,7 @@
 //    cookie data.  Successful signin returns promise 
 //    resolving to newly signed in user.
 
-const baseURL = "http://localhost:3001/";
+const baseURL = "http://34.219.177.74/api/"; //"http://localhost:3001/";
 const headers = new Headers();
 var cookie;
 

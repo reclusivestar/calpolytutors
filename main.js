@@ -54,7 +54,7 @@ app.use(Session.router);
 app.use(function(req, res, next) {
    console.log(req.path);
    if (req.session || (req.method === 'POST' &&
-    (req.path === '/Prss' || req.path === '/Ssns'))) {
+    (req.path === '/api/Prss' || req.path === '/api/Ssns'))) {
       req.validator = new Validator(req, res);
       next();
    } else
@@ -65,9 +65,9 @@ app.use(function(req, res, next) {
 app.use(CnnPool.router);
 
 // Load all subroutes
-app.use('/Prss', require('./Routes/Account/Prss.js'));
-app.use('/Ssns', require('./Routes/Account/Ssns.js'));
-app.use('/Query', require('./Routes/Query/Query.js'));
+app.use('/api/Prss', require('./Routes/Account/Prss.js'));
+app.use('/api/Ssns', require('./Routes/Account/Ssns.js'));
+app.use('/api/Query', require('./Routes/Query/Query.js'));
 /*app.use('/MvLsts', require('./Routes/Movies/MvLsts.js'));
 app.use('/Mvs', require('./Routes/Movies/Mvs.js'));*/
 
